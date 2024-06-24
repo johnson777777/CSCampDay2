@@ -1,17 +1,42 @@
+<!-- 練習 4
+ 練習: 加入連結 <a>、圖片 <img>
+    1. 加入 <a> 元素，設定文字內容為"推薦的影片"
+    2. 指定 href 屬性為 https://youtu.be/dQw4w9WgXcQ
+    3. 加入 <br> 元素
+    4. 加入 <img> 元素
+    5. 指定 src 屬性為 ./pedro.gif
+    6. 指定 width 屬性為 300、指定 height 屬性為 300
+-->
+
 <!doctype html>
 <html>
     <head>
-        <title>網頁標題</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css"> 
+        <script src="script.js"></script>        
+        <title>我的網站</title>
     </head>
     <body>
-        <form id="myForm">
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname">
-            <button>Submit</button>
-        </form>
-        <script src="script.js"></script>
+        <h1>歡迎來到我的網站</h1>
+        <div class="introduction">
+            <p>NYCU 巴辛狗</p>
+            <p>我的星座是天秤座</p>
+            <p>我MBTI是NMSL</p>
+        </div>
+        
+        <p>我的興趣是</p>
+        <ul class="hobby">
+            <li>打電動</li>
+            <li>看動漫</li>
+            <li>吃飯</li>
+        </ul>
+
+        <p>我最喜歡的食物是</p>
+        <ol class="favorite">
+            <li>牛排</li>
+            <li>義大利麵</li>
+            <li>披薩</li>
+        </ol>
+
     </body>
 </html>
+
