@@ -13,23 +13,23 @@ driver = webdriver.Chrome(service=service)
 driver.get("https://kktix.com/")
 
 # 登入
-sign = driver.find_elements(By.???, "???")
-???
-sign_account = driver.find_element(By.NAME, "???")
-sign_account.send_keys("???")
-sign_password = driver.find_element(By.NAME, "???")
-sign_password.send_keys("i???" + Keys.???)
+sign = driver.find_elements(By.__1__, "__2__")
+__3__
+signin_account = driver.find_element(By.NAME, "__4__")
+signin_account.send_keys("__5__")
+signin_password = driver.find_element(By.NAME, "__6__")
+signin_password.send_keys("__7__" + Keys.__8__) 
 
-# 查詢演唱會場次
-element = driver.find_element(By.NAME, "???")
-??? # 清除輸入結果
-element.send_keys("???" + Keys.ENTER)
-link = driver.find_element(By.???, "???")
-???
-next_step = driver.find_elements(By.CLASS_NAME, "???")
-next_step[???].click()
-print("success")
+element = driver.find_element(By.NAME, "__9__")
+__10__ # 清除輸入結果
+element.send_keys("__11__" + Keys.ENTER)
 
-time.sleep(???)
-driver.quit() #關閉瀏覽器
+link = driver.find_element(By.__12__, "__13__")
+__14__
+next_step = driver.find_elements(By.CLASS_NAME, "__15__")
+next_step[__16__].click()
+
+time.sleep(__17__)
+driver.quit()
+
 
