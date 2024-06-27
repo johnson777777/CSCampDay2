@@ -10,14 +10,20 @@ import time
 
 url='https://www.holiday.com.tw/SongInfo/SongList.aspx?st=top&lt=tc'
 if __name__=='__main__':
-    #service = Service(executable_path="/home/cscamp/chromedriver/chromedriver")
-    #driver = webdriver.Chrome(service=service)
-    driver=webdriver.Chrome()
+    service = Service(executable_path="/home/cscamp/chromedriver/chromedriver")
+    driver = webdriver.Chrome(service=service)
+    #driver=webdriver.Chrome()
     driver.get(url)
     wait=WebDriverWait(driver, 10)
+
+    # 定位搜尋的輸入框
     search=wait.until(EC.presence_of_element_located((By.XPATH, "__???__")), 'Error')
     search."__???__"("__???__")
+
+    # 定位按鈕
     button=wait.until(EC.presence_of_element_located((By.XPATH, "__???__")), "Error")
     button.click()
+
+    # 定位曲號
     number=wait.until(EC.presence_of_element_located((By.XPATH, "__???__")), "Error")
     print(number.text)

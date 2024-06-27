@@ -10,11 +10,12 @@ import time
 
 url='https://www.holiday.com.tw/SongInfo/SongList.aspx?st=top&lt=tc'
 if __name__=='__main__':
-    #service = Service(executable_path="/home/cscamp/chromedriver/chromedriver")
-    #driver = webdriver.Chrome(service=service)
-    driver=webdriver.Chrome()
+    service = Service(executable_path="/home/cscamp/chromedriver/chromedriver")
+    driver = webdriver.Chrome(service=service)
+    #driver=webdriver.Chrome()
     driver.get(url)
     wait=WebDriverWait(driver, 10)
-    songs=wait.until(EC.presence_of_all_elements_located((By.XPATH, "__???__]")), "Error")
+    # 爬到所有歌
+    songs=wait.until(EC.presence_of_all_elements_located((By.XPATH, "__???__")), "Error")
     for song in songs:
         print(song.text)

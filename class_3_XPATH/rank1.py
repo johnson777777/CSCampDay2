@@ -15,6 +15,8 @@ if __name__=='__main__':
     #driver=webdriver.Chrome()
     driver.get(url)
     wait=WebDriverWait(driver, 10)
+
+    # 定位歌曲名稱
     song=wait.until(EC.presence_of_element_located((By.XPATH, "__???__")), 'Error')
     print(song.text)
 
