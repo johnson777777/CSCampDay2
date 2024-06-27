@@ -7,11 +7,11 @@ driver = webdriver.Chrome(service=service)
 
 # 目標：自己點手好痠而且好慢，希望電腦可以自動連續點貓貓
 
-# Todo: 填入正確的函數
-driver.???("https://popcat.click")
+# TODO: 填入正確的函數
+driver.get("https://popcat.click")
 
-cat = driver.find_element(By.ID, "app")
+cat = driver.find_element(By.ID, "__1__")
 while True:
-    cat.???
+    cat.__2__
 
 

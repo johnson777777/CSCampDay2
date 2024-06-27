@@ -10,10 +10,10 @@ driver = webdriver.Chrome(service=service)
 
 driver.get("https://www.holiday.com.tw/SongInfo/SongList.aspx?st=top&lt=tc")
 
-# Todo: 填入正確的函數和值
-numbers = driver.find_elements(By.???, "???")
-titles = driver.find_elements(By.???, "???")
-singers = driver.find_elements(By.???, "???")
+# TODO: 填入正確的函數和值
+numbers = driver.find_elements(By.__1__, "__2__")
+titles = driver.find_elements(By.__3__, "__4__")
+singers = driver.find_elements(By.__5__, "__6__")
 
 # 以下程式碼不用動
 for i in range(0, 20):
