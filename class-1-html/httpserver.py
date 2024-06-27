@@ -10,7 +10,7 @@ Protocol     = "HTTP/1.0"
 if sys.argv[1:]:
     port = int(sys.argv[1])
 else:
-    port = 80
+    port = 8000
 server_address = ('0.0.0.0', port)
 
 HandlerClass.protocol_version = Protocol
