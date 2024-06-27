@@ -20,4 +20,6 @@ s.connect(("8.8.8.8", 80))
 ip = s.getsockname()[0]
 print(ip)
 s.close()
+
+print(f'網站網址: http://{ip}:8000/')
 httpd.serve_forever()
