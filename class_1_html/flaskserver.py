@@ -13,19 +13,18 @@ def display():
             messages_html += f"<p>{html.escape(line.strip())}</p>"
     return render_template("index.html") + messages_html
 
-@app.route('/') 
+@app.route('/')
 def index(): 
     return display()
      
-@app.route('/submit', methods = ['POST']) 
+@app.route('/submit', methods = ['GET']) 
 def get_data(): 
-    name = request.form['name']
-    message = request.form['message']
-    if request.method == 'POST': 
+    name = request.args.get('name')
+    message = request.args.get('message')
+    if request.method == 'GET':
         with open(data_path, 'a+', encoding='utf8') as f:
             f.write(f'{str(name)}: {str(message)}\n')
     return redirect('/')
-
      
 if __name__ == '__main__': 
     app.run('0.0.0.0', debug = True) 
