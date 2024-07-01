@@ -17,4 +17,4 @@ for element in elements:
     print(element.text)
 
 time.sleep(5)
-driver.quit()
+driver.quit() # 關閉瀏覽器

@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import time
 
+service = Service(executable_path="/home/cscamp/chromedriver/chromedriver")
 driver = webdriver.Chrome(service=service)
 
 driver.get("https://www.ptt.cc/bbs/Japan_Travel/index.html")
@@ -17,4 +18,4 @@ content = driver.find_element(By.ID, "main-content")
 print(content.text)
 
 time.sleep(5)
-driver.quit()
+driver.quit() # 關閉瀏覽器

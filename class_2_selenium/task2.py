@@ -14,4 +14,4 @@ element.clear() # 清除輸入結果
 element.send_keys("北海道" + Keys.ENTER)
 
 time.sleep(5)
-driver.quit()
+driver.quit() # 關閉瀏覽器
