@@ -1,4 +1,4 @@
-/* .red {
+.red {
     background: rgb(243, 102, 102);
 }
 .yellow {
@@ -59,7 +59,7 @@ button {
 button:hover {
     background-color: #04AA6D;
     color: white;
-} */
+}
 
 body {
     font-family: Arial, sans-serif;
