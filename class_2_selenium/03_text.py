@@ -13,8 +13,13 @@ element = driver.find_element(By.CLASS_NAME, "query")
 element.clear() # 清除輸入結果
 element.send_keys("北海道" + Keys.ENTER)
 elements = driver.find_elements(By.CLASS_NAME, "title")
-for element in elements:
+
+# 印出所有標題文字
+for element in elements: 
     print(element.text)
+
+# 印出第三個標題文字
+# print(elements[2].text) 
 
 time.sleep(5)
 driver.quit() # 關閉瀏覽器
