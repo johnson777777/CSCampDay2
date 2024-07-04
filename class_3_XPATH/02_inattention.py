@@ -30,3 +30,5 @@ if __name__=='__main__':
     numberXPATH="__???__"
     number=wait.until(EC.presence_of_element_located((By.XPATH, numberXPATH)), "Error")
     print(number.text)
+
+    driver.quit()

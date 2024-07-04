@@ -21,3 +21,4 @@ if __name__=='__main__':
     song=wait.until(EC.presence_of_element_located((By.XPATH, songXPATH)), 'Error')
     print(song.text)
 
+    driver.quit()

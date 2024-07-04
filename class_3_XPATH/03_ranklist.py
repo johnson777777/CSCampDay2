@@ -20,3 +20,5 @@ if __name__=='__main__':
     songs=wait.until(EC.presence_of_all_elements_located((By.XPATH, songsXPATH)), "Error")
     for song in songs:
         print(song.text)
+
+    driver.quit()
