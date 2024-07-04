@@ -1,4 +1,4 @@
-.red {
+/* .red {
     background: rgb(243, 102, 102);
 }
 .yellow {
@@ -47,7 +47,6 @@ button {
     background-color: white; 
     border: 2px solid #04AA6D;
     color: black; 
-    /* padding: 16px 32px; */
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -60,4 +59,72 @@ button {
 button:hover {
     background-color: #04AA6D;
     color: white;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+}
+
+
+a {
+    color: #06c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#msg-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#msg-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#msg-form input[type="text"],
+#msg-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#msg-form button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#msg-form button:hover {
+    background-color: #037f58;
+}
+
+.cscamp {
+    background: #f1f1f1;
+    padding: 20px;
+    margin: 20px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
